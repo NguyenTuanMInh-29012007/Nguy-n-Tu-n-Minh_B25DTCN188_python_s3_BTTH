@@ -16,13 +16,13 @@ while choice != 'n':
         else:
             message = "Nhân viên chuyên cần tốt"
 
-        print(f"----Thông tin nhân viên: {employee_number - 1}----")
+        print(f"----Thông tin nhân viên: {employee_number}----")
         print("Tên: ", name_employee)
         print("Số ngày đi làm: ", number_of_working_days)
         print(message)
         print("-----------------------------")
 
-    choice = input("Tiếp tục chương trình? (y/n)")
+    choice = input("Tiếp tục chương trình? (y/n)").strip().lower()
     while(choice != 'y' and choice != 'n'):
         choice = input("[!] Lỗi: Hãy chọn (y/n): ")
 else:
